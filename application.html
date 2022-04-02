@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="application.css">
+
+
+    <!doctype html>
+    <html lang="en">
+    
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Hugo 0.72.0">
+      <title>Carousel Template · Bootstrap</title>
+    
+      <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    
+      <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+    
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+    
+        /* GLOBAL STYLES
+        --------------------------------------------- */
+        /* Padding below the footer and lighter body text */
+    
+        body {
+          padding-top: 3rem;
+          
+          color: #5a5a5a;
+        }
+    
+    header{
+        height: 50%;
+        background-color: #5a5a5a;
+        
+    }
+        /* CUSTOMIZE THE CAROUSEL
+        -------------------------------------------- */
+    
+        /* Carousel base class */
+        .carousel {
+          margin-bottom: 4rem;
+        }
+    
+        /* Since positioning the image, we need to help out the caption */
+        .carousel-caption {
+          bottom: 3rem;
+          z-index: 10;
+        }
+    
+        /* Declare heights because of positioning of img element */
+        .carousel-item {
+          height: 32rem;
+        }
+    
+        .carousel-item>img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          min-width: 100%;
+          height: 32rem;
+        }
+    
+    
+        /* MARKETING CONTENT
+    -------------------------------------------------- */
+    
+        /* Center align the text within the three columns below the carousel */
+        .marketing .col-lg-4 {
+          margin-bottom: 1.5rem;
+          text-align: center;
+        }
+    
+        .marketing h2 {
+          font-weight: 400;
+        }
+    
+        .marketing .col-lg-4 p {
+          margin-right: .75rem;
+          margin-left: .75rem;
+        }
+    
+    
+        /* Featurettes
+    ------------------------- */
+    
+        .featurette-divider {
+          margin: 5rem 0;
+          /* Space out the Bootstrap <hr> more */
+        }
+    
+        /* Thin out the marketing headings */
+        .featurette-heading {
+          font-weight: 300;
+          line-height: 1;
+          letter-spacing: -.05rem;
+        }
+    
+    
+        /* RESPONSIVE CSS
+    -------------------------------------------------- */
+    
+        @media (min-width: 40em) {
+    
+          /* Bump up size of carousel content */
+          .carousel-caption p {
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+            line-height: 1.4;
+          }
+    
+          .featurette-heading {
+            font-size: 50px;
+          }
+        }
+    
+        @media (min-width: 62em) {
+          .featurette-heading {
+            margin-top: 7rem;
+          }
+        }
+      </style>
+
+
+</head>
+
+                   <header style="height: 50%;">
+                      <nav class="navbar navbar-expand-md fixed-top " style="height: 20%;">
+                      <div class="container-fluid" style="margin-left: 2rem;">
+                       <img src="./▶ Home - DRIVERS MEDICALS.UK - Google Chrome 1_26_2022 11_19_25 AM (2).png" alt="" class="img-fluid">
+                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                             <span class="navbar-toggler-icon"></span>
+                                
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarCollapse" style="color: #0ac5a8;">
+                                <ul class="navbar-nav mr-auto mb-2 mb-md-0" style="margin-left: 6rem; justify-content: center; width: 70%; color: #0ac5a8;">
+                                  <li class="nav-item active">
+                                    <a class="nav-link" aria-current="page" href="medical.html">HOME</a>
+                                  </li>
+                                  <li class="nav-item active">
+                                      <a class="nav-link" aria-current="page" href="#">ABOUT US</a>
+                                    </li>
+                                    <div class="dropdown" style="background: transparent;">
+                                      <button class="btn btn-secondary btn-sm dropdown-toggle" type="link" id="dropdownMenuButtonSM" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 0.4rem; background-color: transparent; border: none;">
+                                      <span style="color: #0ac5a8;"> SERVICES
+                                      </span>               
+                                    </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonSM">
+                                        <li><a class="dropdown-item" href="#">HGV Medical</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">PVC/ Bus Medical</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Taxi Medical</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Business Services</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Other Medical</a></li>
+                                      </ul>
+                                    </div>
+                                    <li class="nav-item active">
+                                      <a class="nav-link" aria-current="page" href="location.html">LOCATION</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                      <a class="nav-link" aria-current="page" href="#">CONTACT US</a>
+                                    </li>
+
+                                  
+                                </ul>
+                                <form class="d-flex">
+                                  <button class="btn btn-outline-success" type="submit" style="background-color: #0ac5a8; border-radius: 10px; margin-right: 0.8rem; color: #fff; border: none; ">BOOK NOW</button>
+                                  <button class="btn btn-outline-success" type="submit" style="border-radius: 9px; color: #0ac5a8; border: 1px #0ac5a8 solid; background-color: transparent; ">LOGIN</button>
+                                </form>
+                              </div>  
+                            </div>
+                          </nav>
+                        </header> 
+                        
+                        </html>
+
+                        <body>
+                        
+                          
+                          
+
+                            <form id="regForm" action="">
+
+                                <h1>Account application</h1>
+                                
+                               
+
+
+                                    <div class="tab">
+                                      <div class="row g-3">
+                                                                          <p style="font-size: 22px; font-weight: 700;" >Section 1 - Company Details</p>
+
+                                          <div class="col-sm-6">
+                                            <label for="firstName" class="form-label">Company Name</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                            <div class="invalid-feedback">
+                                              Valid Company name is required.
+                                            </div>
+                                          </div>
+                              
+                                          <div class="col-sm-6">
+                                            <label for="lastName" class="form-label">Company Type</label>
+                                            <select class="form-select" id="country" required>
+                                              <option value="">Choose...</option>
+                                              <option>Sole Trader </option>
+                                              <option>Limited Company</option>
+                                              <option>Partnership</option>
+                                              <option>LLP</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                              Valid last name is required.
+                                            </div>
+                                          </div>
+                              
+                                          <div class="col-sm-6">
+                                            <label for="username" class="form-label">Nature Of Business</label>
+                                            
+                                            
+                                            
+                                            <div class="input-group has-validation">
+                                             
+                                              <input type="text" class="form-control" id="username" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Nature of business is required.
+                                              </div>
+                                            </div>
+                                          </div>
+                              
+                                          <div class="col-sm-6">
+                                            <label for="email" class="form-label">Industry Sector</label>
+                                            <input type="email" class="form-control" id="email" placeholder="">
+                                            <div class="invalid-feedback">
+                                              Please enter a valid email industry sector
+                                            </div>
+                                          </div>
+                              
+                                          <div class="col-sm-6">
+                                            <label for="address" class="form-label">VAT registration number(if applicable)</label>
+                                            <input type="text" class="form-control" id="" placeholder="If not available write none" >
+                                           
+                                          </div>
+                              
+                                          <div class="col-sm-6">
+                                            <label for="address2" class="form-label"> Main contact number </label>
+                                            <input type="text" class="form-control" id="address2" placeholder="">
+                                          </div>
+                              
+                                          <div class="col-sm-6">
+                                              <label for="address2" class="form-label"> How many years has the business been trading </label>
+                                              <input type="text" class="form-control" id="address2" placeholder="">
+                                            </div>
+  
+                                            <div class="col-sm-6">
+                                              <label for="address2" class="form-label"> Number of employees </label>
+                                              <input type="text" class="form-control" id="address2" placeholder="">
+                                            </div>
+  
+                                            <div class="col-12">
+                                              <label for="address2" class="form-label"> Address Line 1 </label>
+                                              <input type="text" class="form-control" id="address2" placeholder="">
+                                            </div>
+  
+                                            <div class="col-12">
+                                              <label for="address2" class="form-label"> Address Line 2 </label>
+                                              <input type="text" class="form-control" id="address2" placeholder="">
+                                            </div>
+  
+  
+                                            <div class="col-sm-6">
+                                              <label for="address2" class="form-label"> Town/City </label>
+                                              <input type="text" class="form-control" id="address2" placeholder="">
+                                            </div>
+  
+  
+                                            <div class="col-sm-6">
+                                              <label for="address2" class="form-label"> Post Code </label>
+                                              <input type="text" class="form-control" id="address2" placeholder="">
+                                            </div>
+  
+                                            <div class="col-12">
+                                              <label for="address2" class="form-label"> How did you hear about us </label>
+                                              <input type="text" class="form-control" id="address2" placeholder="">
+                                            </div>
+                                         
+                                         
+                                        </div>
+  
+                                    </div>
+
+
+
+
+
+
+
+                                
+                                
+
+                                <div class="tab">
+                                 
+
+                                      <div class="row g-3">
+                                        <p style="font-weight: 700; font-size: 22px; ">Section 2- Contact & Billing details</p>
+
+                                          <div class="col-sm-6">
+                                            <label for="firstName" class="form-label">Primary Contact Name</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                            <!-- <div class="invalid-feedback">
+                                              co name is required.
+                                            </div> -->
+                                          </div>
+                              
+
+                                          <div class="col-sm-6">
+                                            <label for="username" class="form-label">Primary Contact Phone Number</label>
+                                            
+                                            
+                                            
+                                            <div class="input-group has-validation">
+                                             
+                                              <input type="text" class="form-control" id="username" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Nature of business is required.
+                                              </div>
+                                            </div>
+                                          </div>
+
+
+                                          <div class="col-sm-6">
+                                            <label for="username" class="form-label">Primary Contact Email Address</label>
+                                            
+                                            
+                                            
+                                            <div class="input-group has-validation">
+                                             
+                                              <input type="text" class="form-control" id="username" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Nature of business is required.
+                                              </div>
+                                            </div>
+                                          </div>
+
+
+                                          <div class="col-sm-6">
+                                            <label for="username" class="form-label">Primary Contact Email Address</label>
+                                            
+                                            
+                                            
+                                            <div class="input-group has-validation">
+                                             
+                                              <input type="text" class="form-control" id="username" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Nature of business is required.
+                                              </div>
+                                            </div>
+                                          </div>
+
+
+                                          <div class="col-sm-6">
+                                            <label for="lastName" class="form-label">Is your invoicing address the same as the company address</label>
+                                            <select class="form-select" id="country" required>
+                                              <option value="">Choose...</option>
+                                              <option> Yes </option>
+                                              <option> No </option>
+                                             
+                                            </select>
+                                            <div class="invalid-feedback">
+                                              Valid last name is required.
+                                            </div>
+                                          </div>
+                              
+                                          <div class="col-sm-6">
+                                            <label for="username" class="form-label">Accounts contact name</label>
+                                            
+                                            
+                                            
+                                            <div class="input-group has-validation">
+                                             
+                                              <input type="text" class="form-control" id="username" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Nature of business is required.
+                                              </div>
+                                            </div>
+                                          </div>
+                              
+                                          <div class="col-sm-6">
+                                            <label for="email" class="form-label">Accounts phone number </label>
+                                            <input type="email" class="form-control" id="email" placeholder="">
+                                            <div class="invalid-feedback">
+                                              Please enter a valid email industry sector
+                                            </div>
+                                          </div>
+                              
+                                          <div class="col-sm-6">
+                                            <label for="address" class="form-label">Accounts email address</label>
+                                            <input type="text" class="form-control" id="" placeholder="" >
+                                           
+                                          </div>
+                              
+                                          <div class="col-sm-6">
+                                            <label for="address2" class="form-label"> Purchasing contact email address </label>
+                                            <input type="text" class="form-control" id="address2" placeholder="">
+                                          </div>
+                              
+                                          <div class="col-sm-6">
+                                            <label for="lastName" class="form-label">Do you operate a purchase order system</label>
+                                            <select class="form-select" id="country" required>
+                                              <option value="">Choose...</option>
+                                              <option> Yes </option>
+                                              <option> No </option>
+                                             
+                                            </select>
+                                           
+                                          </div>
+  
+                                          <p>Please note, if PO numbers are required for invoicing purposes this must be given at the time of booking. We do not accept any delays to payment where PO numbers are not provided by you.</p>
+                                                                                     
+                                        </div>
+  
+                                    
+
+
+
+
+
+                                     </div>
+
+
+
+                              
+                                
+                                <div class="tab">
+                                 
+                                <p>Please tell us how frequently you intend to use our service so we can assist you most efficiently. There are no minimum booking requirements however we may decline
+                                     your request if your business is unlikely to use our service regularly.</p>
+                                    <!-- One "tab" for each step in the form: -->
+                                    
+                                      <div class="row g-3">
+                                        <p style="font-size: 20px; font-weight: 700; ">Section 3 - Business Account Usage</p>
+                                          <div class="col-sm-6">
+                                            <label for="firstName" class="form-label">Roughly how many medical appointments do you expect to book per month?*</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                            
+                                          </div>
+                              
+                                        
+                              
+                                          <div class="col-sm-6">
+                                            <label for="username" class="form-label"> Authorised persons (names of those authorised to book appointments if you book by email/phone) </label>
+                                            
+                                            
+                                            
+                                            <div class="input-group has-validation">
+                                             
+                                              <input type="text" class="form-control" id="username" placeholder="" required>
+                                            <div class="invalid-feedback">
+                                                Nature of business is required.
+                                              </div>
+                                            </div>
+                                          </div>
+                              
+                                          
+
+                                          <div class="col-12">
+                                            <label for="lastName" class="form-label">May we mention your company in our monthly newsletter to our business customers and on our social media channels?</label>
+                                            <select class="form-select" id="country" required>
+                                              <option value="">Choose...</option>
+                                              <option> Yes </option>
+                                              <option> No </option>
+                                             
+                                            </select>
+                                           
+                                          </div>
+  
+                              
+
+                                          <p style="margin-top: 1rem; margin-bottom: 1rem;">(We will always check with you prior to publishing any reference to your business).</p>
+
+                                          <div class="col-12">
+                                            <label for="address" class="form-label"> I hereby request that an account be opened for our business in accordance with the above particulars. Please print name to sign.   </label>
+                                            <input type="text" class="form-control" id="" placeholder="" >
+                                           
+                                          </div>
+                              
+                                          
+                                         
+                                        </div>
+  
+                                    
+
+
+
+
+
+
+
+
+                                </div>
+                                
+                               
+                                
+                                <div style="overflow:auto;">
+                                  <div style="float:right;">
+                                    <button type="button" id="prevBtn" onclick="nextPrev(-1)" style="border-radius: 0.2rem;">Previous</button>
+                                    <button type="button" id="nextBtn" onclick="nextPrev(1)" style="border-radius: 0.2rem;">Next</button>
+                                  </div>
+                                </div>
+                                
+                                <!-- Circles which indicates the steps of the form: -->
+                                <div style="text-align:center;margin-top:40px;">
+                                  <span class="step"></span>
+                                  <span class="step"></span>
+                                  <span class="step"></span>
+                                 
+                                </div>
+                                
+                                </form>
+
+
+                                <style>
+                                    * {
+                                      box-sizing: border-box;
+                                    }
+                                    
+                                    body {
+                                      background-color: #f1f1f1;
+                                    }
+                                    
+                                    #regForm {
+                                      background-color: #ffffff;
+                                      margin: 100px auto;
+                                      font-family: Raleway;
+                                      padding: 40px;
+                                      width: 70%;
+                                      min-width: 300px;
+                                    }
+                                    
+                                    h1 {
+                                      text-align: center;  
+                                    }
+                                    
+                                    input {
+                                      padding: 10px;
+                                      width: 100%;
+                                      font-size: 17px;
+                                      font-family: Raleway;
+                                      border: 1px solid #aaaaaa;
+                                    }
+                                    
+                                    /* Mark input boxes that gets an error on validation: */
+                                    input.invalid {
+                                      background-color: #ffdddd;
+                                    }
+                                    
+                                    /* Hide all steps by default: */
+                                    .tab {
+                                      display: none;
+                                    }
+                                    
+                                    button {
+                                      background-color: #04AA6D;
+                                      color: #ffffff;
+                                      border: none;
+                                      padding: 10px 20px;
+                                      font-size: 17px;
+                                      font-family: Raleway;
+                                      cursor: pointer;
+                                    }
+                                    
+                                    button:hover {
+                                      opacity: 0.8;
+                                    }
+                                    
+                                    #prevBtn {
+                                      background-color: #bbbbbb;
+                                    }
+                                    
+                                    /* Make circles that indicate the steps of the form: */
+                                    .step {
+                                      height: 15px;
+                                      width: 15px;
+                                      margin: 0 2px;
+                                      background-color: #bbbbbb;
+                                      border: none;  
+                                      border-radius: 50%;
+                                      display: inline-block;
+                                      opacity: 0.5;
+                                    }
+                                    
+                                    .step.active {
+                                      opacity: 1;
+                                    }
+                                    
+                                    /* Mark the steps that are finished and valid: */
+                                    .step.finish {
+                                      background-color: #04AA6D;
+                                    }
+                                    </style>
+                                    <body>
+                                    
+                                  
+                                    
+                                    <script>
+                                    var currentTab = 0; // Current tab is set to be the first tab (0)
+                                    showTab(currentTab); // Display the current tab
+                                    
+                                    function showTab(n) {
+                                      // This function will display the specified tab of the form...
+                                      var x = document.getElementsByClassName("tab");
+                                      x[n].style.display = "block";
+                                      //... and fix the Previous/Next buttons:
+                                      if (n == 0) {
+                                        document.getElementById("prevBtn").style.display = "none";
+                                      } else {
+                                        document.getElementById("prevBtn").style.display = "inline";
+                                      }
+                                      if (n == (x.length - 1)) {
+                                        document.getElementById("nextBtn").innerHTML = "Submit";
+                                      } else {
+                                        document.getElementById("nextBtn").innerHTML = "Next";
+                                      }
+                                      //... and run a function that will display the correct step indicator:
+                                      fixStepIndicator(n)
+                                    }
+                                    
+                                    function nextPrev(n) {
+                                      // This function will figure out which tab to display
+                                      var x = document.getElementsByClassName("tab");
+                                      // Exit the function if any field in the current tab is invalid:
+                                      if (n == 1 && !validateForm()) return false;
+                                      // Hide the current tab:
+                                      x[currentTab].style.display = "none";
+                                      // Increase or decrease the current tab by 1:
+                                      currentTab = currentTab + n;
+                                      // if you have reached the end of the form...
+                                      if (currentTab >= x.length) {
+                                        // ... the form gets submitted:
+                                        document.getElementById("regForm").submit();
+                                        return false;
+                                      }
+                                      // Otherwise, display the correct tab:
+                                      showTab(currentTab);
+                                    }
+                                    
+                                    function validateForm() {
+                                      // This function deals with validation of the form fields
+                                      var x, y, i, valid = true;
+                                      x = document.getElementsByClassName("tab");
+                                      y = x[currentTab].getElementsByTagName("input");
+                                      // A loop that checks every input field in the current tab:
+                                      for (i = 0; i < y.length; i++) {
+                                        // If a field is empty...
+                                        if (y[i].value == "") {
+                                          // add an "invalid" class to the field:
+                                          y[i].className += " invalid";
+                                          // and set the current valid status to false
+                                          valid = false;
+                                        }
+                                      }
+                                      // If the valid status is true, mark the step as finished and valid:
+                                      if (valid) {
+                                        document.getElementsByClassName("step")[currentTab].className += " finish";
+                                      }
+                                      return valid; // return the valid status
+                                    }
+                                    
+                                    function fixStepIndicator(n) {
+                                      // This function removes the "active" class of all steps...
+                                      var i, x = document.getElementsByClassName("step");
+                                      for (i = 0; i < x.length; i++) {
+                                        x[i].className = x[i].className.replace(" active", "");
+                                      }
+                                      //... and adds the "active" class on the current step:
+                                      x[n].className += " active";
+                                    }
+                                    </script>
+                                    
+              
+
+               
+
+
+                                    <div class="container-fluid" style="  background-color: rgba(31, 30, 30, 0.993) !important;    margin-top: 2rem; color:#fff ;">
+                                        <footer class="py-2">
+                                          <div class="row">
+                                            <div class="col-2" style="margin-left: 2rem;">
+                                              <h5><img src="./▶ Home - DRIVERS MEDICALS.UK - Google Chrome 1_26_2022 11_19_25 AM (2).png" alt=""></h5>
+                                              <ul class="nav flex-column">
+                                                <li class="nav-item mb-2">All driver medicals are completed by GMC registered doctors in accordancewith current DVLA Group 2 guidelines</li>
+                                                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li> 
+                                                <li class="nav-item mb-2" style="width: 100%;"><a href="#" class="nav-link p-0 text-muted">TERMS AND CONDITIONS`</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PRIVATE POLICY</a></li>
+                                              </ul>
+                                            </div>
+                                       
+                                            <div class="col-2" style="margin-left: 3rem; line-height: 2.3rem;">
+                                              <h5>Menu</h5>
+                                              <ul class="nav flex-column >
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About Us </a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Booking D4 Medicals</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> D4 Medicals</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Location</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PCO/TAXI MEDICALS </a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> Contact </a></li>
+                                    
+                                    
+                                    
+                                              </ul>
+                                            </div>
+                                      
+                                            <div class="col-2" style="line-height: rem;">
+                                              <h5>Contact Info</h5>
+                                              <ul class="nav flex-column" style="line-height: 2rem;">
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Call us: 02039639083</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Send us a message</a></li>
+                                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Follow us</a></li>
+                                                <li class="nav-item mb-2" style=""><a href="#" class="nav-link p-0 text-muted"></a> <a href="#" style="margin-right:1rem;"><img src="./facebook 1.png" alt=""></a>    <a href="#" style="margin-right: 1rem;"> <img src="./twitter 1.png" alt=""></a>    <a href="#"><img src="./instagram-sketched 1.png" alt=""></a>    </li>
+                                               
+                                              </ul>
+                                            </div>
+                                      
+                                            <div class="col-4 offset-1">
+                                              <form>
+                                                <h5>Subscribe to our newsletter</h5>
+                                                <p>Monthly digest of whats new and exciting from us.</p>
+                                                <div class="d-flex w-100 gap-3">
+                                                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                                                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                                  <button class="btn btn-primary" type="button" style="background-color: #0ac5a8; border: none; ">Subscribe</button>
+                                                 
+                                                </div>
+                                              </form>
+                                            </div>
+                                          </div>
+                                          <!-- <div class="d-flex justify-content-between py-4 my-4 border-top">
+                                            <p>.</p>
+                                            <ul class="list-unstyled d-flex">
+                                              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                                              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                                              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                                            </ul>
+                                          </div> -->
+                                        </footer>
+                                      </div>
+
+
+                
+                
+                            <script src="./js/bootstrap.bundle.js"></script>
+                        </body>
+
+
+                        </html>
